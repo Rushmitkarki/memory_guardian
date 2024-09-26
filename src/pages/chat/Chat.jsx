@@ -114,6 +114,7 @@ const Chat = () => {
     try {
       const response = await createGroupChat({ name: groupName, users });
       setChats([...chats, response.data.chat]);
+      window.location.reload();
       setSelectedChat(response.data);
       setShowCreateGroupModal(false);
     } catch (error) {

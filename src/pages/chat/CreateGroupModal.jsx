@@ -29,6 +29,8 @@ const CreateGroupModal = ({ onClose, onCreateGroup }) => {
   const handleCreateGroup = () => {
     const userIds = selectedUsers.map((user) => user._id);
     onCreateGroup(groupName, userIds);
+    
+     
   };
 
   return (
